@@ -1,0 +1,23 @@
+<h1>Hola de nuevo , !Bienvenido a la aplicación de gestión de productos desde la base de datos !🛍️</h1>
+
+<h1>Lista de Productos</h1>
+<article>
+  <table role= "grid">
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Precio</th>
+      <th scope="col">Stock</th>
+    </tr>
+    {{#each products}}
+      <tr>
+        <td>{{this._id}}</td>
+        <td>{{this.title}}</td>
+        <td>{{this.price}}</td>
+        <td>{{this.stock}}</td>
+    </tr>
+    {{/each}}
+</table>
+</article>
+
+
